@@ -16,14 +16,19 @@
     <div class="container">
       <header>
         <h1 class="main-title">Simple Weather App</h1>
-        <form class="search-form">
-          <input type="text" name="city" placeholder="Search by a city" />
+        <form id="searchForm" class="search-form">
+          <input
+            type="text"
+            required="required"
+            name="city"
+            placeholder="Search by a city"
+          />
           <button type="submit">Search</button>
         </form>
       </header>
       <section>
-        <ul class="weather-list">
-          <li>
+        <ul id="weaterList" class="weather-list">
+          <!-- <li>
             <div class="weather-card">
               <div class="card-header">
                 <p>Nova Serrana</p>
@@ -33,11 +38,16 @@
                 <p class="temp-info"><span>32</span>°C</p>
               </div>
               <div class="card-footer">
-                <div class="weather-icon"></div>
+                <div class="weather-icon">
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/04d.svg"
+                    alt="sky-icon"
+                  />
+                </div>
                 <p class="sky-condition">Clear Sky</p>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
     </div>
@@ -57,5 +67,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
